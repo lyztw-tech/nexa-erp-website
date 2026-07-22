@@ -38,8 +38,10 @@ jobs:
       - name: Build (static export)
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
-          NEXT_PUBLIC_SITE_ORIGIN: https://${{ github.repository_owner }}.github.io
+          # 自訂網域 about.erp.nexa.lyztw.com 從網域根目錄 serve，
+          # 所以「不設」NEXT_PUBLIC_BASE_PATH（basePath 留空，資源走根目錄）。
+          # 若日後改回 github.io 專案頁，補回：NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+          NEXT_PUBLIC_SITE_ORIGIN: https://about.erp.nexa.lyztw.com
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
