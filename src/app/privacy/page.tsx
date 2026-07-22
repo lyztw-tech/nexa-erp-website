@@ -14,6 +14,9 @@ export default function PrivacyPage() {
       <Nav />
       <main>
         <article className="legal wrap">
+          <a className="legal-top-back" href="/#top">
+            ‹ 回首頁
+          </a>
           <h1>隱私權政策</h1>
           <p className="updated">最後更新：2026 年 7 月　·　適用於 Nexa 網站與行動 App</p>
 
