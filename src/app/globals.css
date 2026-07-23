@@ -184,6 +184,15 @@ button {
   font-weight: 800;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
 }
+/* 品牌標記圖（藍色 A，透明底，深淺色皆可） */
+.brand .logo-img {
+  height: 26px;
+  width: auto;
+  display: block;
+}
+.foot .brand .logo-img {
+  height: 24px;
+}
 .brand small {
   font-size: 12px;
   font-weight: 500;

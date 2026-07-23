@@ -110,7 +110,8 @@ export function Footer() {
       <div className="wrap foot-grid">
         <div className="foot-brand">
           <Link className="brand" href="/">
-            <span className="logo">N</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="logo-img" src={asset('/brand/nexa-mark.png')} alt="Nexa" />
             Nexa
           </Link>
           <p className="foot-tag">營造工程數位管理平台</p>

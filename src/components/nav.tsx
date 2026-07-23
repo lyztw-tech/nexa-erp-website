@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { asset } from '@/lib/asset-path';
 
 const LINKS = [
   { href: '/#features', label: '功能' },
@@ -34,7 +35,8 @@ export function Nav() {
     <nav className={`nav${on ? ' on' : ''}`}>
       <div className="wrap nav-in">
         <Link className="brand" href="/#top">
-          <span className="logo">N</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className="logo-img" src={asset('/brand/nexa-mark.png')} alt="Nexa" />
           Nexa
           <small>營造工程數位管理平台</small>
         </Link>
