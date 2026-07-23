@@ -107,17 +107,40 @@ export function FeatureRow({
 export function Footer() {
   return (
     <footer className="foot">
-      <div className="wrap foot-in">
-        <Link className="brand" href="/">
-          <span className="logo">N</span>
-          Nexa
-        </Link>
-        <span>
-          <Link href="/privacy" style={{ color: 'var(--brand-ink)', marginRight: 14 }}>
-            隱私權政策
+      <div className="wrap foot-grid">
+        <div className="foot-brand">
+          <Link className="brand" href="/">
+            <span className="logo">N</span>
+            Nexa
           </Link>
-          營造工程數位管理平台 · © 2026 lyztw · dev@lyztw.com
-        </span>
+          <p className="foot-tag">營造工程數位管理平台</p>
+          <p className="foot-co">萊茲特資訊科技</p>
+        </div>
+        <div className="foot-contact">
+          <h4>聯絡資訊</h4>
+          <dl>
+            <div>
+              <dt>電話</dt>
+              <dd>
+                <a href="tel:+886282626600">(02) 8262-6600</a>
+              </dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd>
+                <a href="mailto:lyztw@lyztw.com">lyztw@lyztw.com</a>
+              </dd>
+            </div>
+            <div>
+              <dt>地址</dt>
+              <dd>臺北市中正區杭州南路 1 段 6 巷 11 號</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div className="wrap foot-bar">
+        <span>© 2026 萊茲特資訊科技 · lyztw</span>
+        <Link href="/privacy">隱私權政策</Link>
       </div>
     </footer>
   );

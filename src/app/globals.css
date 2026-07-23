@@ -1023,25 +1023,82 @@ button {
 /* ── footer ── */
 .foot {
   border-top: 1px solid var(--line);
-  padding: 40px 0;
+  padding: 48px 0 26px;
   color: var(--ink-3);
-  font-size: 13.5px;
+  font-size: 14px;
 }
-.foot-in {
+.foot-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.foot .brand {
+  font-size: 18px;
+  color: var(--ink);
+}
+.foot .brand .logo {
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+}
+.foot-tag {
+  margin-top: 12px;
+  font-size: 13.5px;
+  color: var(--ink-3);
+}
+.foot-co {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.foot-contact h4 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--ink-2);
+  margin-bottom: 12px;
+}
+.foot-contact dl {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 0;
+}
+.foot-contact dl > div {
+  display: flex;
+  gap: 14px;
+}
+.foot-contact dt {
+  flex: none;
+  width: 44px;
+  color: var(--ink-3);
+}
+.foot-contact dd {
+  margin: 0;
+  color: var(--ink-2);
+}
+.foot-contact a {
+  color: var(--ink-2);
+}
+.foot-contact a:hover {
+  color: var(--brand-ink);
+}
+.foot-bar {
+  margin-top: 34px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
-}
-.foot .brand {
-  font-size: 16px;
-  color: var(--ink);
-}
-.foot .brand .logo {
-  width: 26px;
-  height: 26px;
   font-size: 13px;
+}
+.foot-bar a {
+  color: var(--brand-ink);
+  font-weight: 600;
 }
 
 /* ── reveal ── */
